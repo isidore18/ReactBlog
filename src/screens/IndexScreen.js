@@ -5,6 +5,9 @@ import {
   StyleSheet,
   FlatList,
   TouchableOpacity,
+  Animated,
+  Image,
+  Easing,
 } from 'react-native';
 import { Context } from '../context/BlogContext';
 import { Feather } from '@expo/vector-icons';
@@ -27,6 +30,10 @@ const IndexScreen = ({ navigation }) => {
 
   return (
     <View>
+      <Text>
+        Coucou désolé, mes contenus ne se chargent plus mais je suis là pour
+        ajouter une animation
+      </Text>
       <FlatList
         data={state}
         keyExtractor={(blogPost) => blogPost.title}
